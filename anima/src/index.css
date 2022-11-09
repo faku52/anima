@@ -1,0 +1,28 @@
+body{
+    margin: auto;
+    padding: 0%;
+}
+nav p {
+    font-style: italic ;
+    color:rgb(0, 0, 0);
+    
+}
+#brandName{
+    font-family: "Dancing Script";
+    font-size: 3rem;
+    font-style: italic;
+}
+#navbar-container{
+    background-color: #78a75a !important;
+    font-family: Helvetica, sans-serif;
+    font-size: large;
+    
+    
+}
+
+.carticon{
+    height: 3rem;
+    width: 3rem;
+    
+    
+}

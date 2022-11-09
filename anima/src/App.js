@@ -1,11 +1,18 @@
 import React from 'react'
-import Navegacion from "./components/NavBar/NavBar"
+import ItemListContainer from "./components/ItemListContainer"
+import Navegacion from './components/NavBar'
+
 
 function App() {
   return (
-    <div>
-      <Navegacion />
+
+    <div className="App">
+      <main>
+         <Navegacion className="navbar"/>
+         <ItemListContainer  greeting={"Hola, ¿que estas buscando?"}/>
+      </main>
     </div>
+  
   )
 }
 
