@@ -1,10 +1,35 @@
-import React from 'react'
+import { useState } from "react";
+import ItemList from "./ItemList";
+import Loader from "./Loader";
+import Productos from "./Productos";
 
+const ItemListContainer = ({ greeting }) => {
+  const [products, setProducts] = useState([]);
+  const [hasProduct, setHasProduct] = useState(false);
 
-function ItemListContainer({greeting}) {
+  const listproduct = new Promise((resolve) =>
+    setTimeout(() => {
+      resolve(Productos);
+    }, 3000)
+  );
+
+  listproduct
+    .then((data) => setProducts(data))
+    .then((data) => setHasProduct(!data));
+
+  console.log(products);
+
   return (
-   <div>{greeting}</div>
-  )
-}
+    <div className="itemListContainer">
+      <div>{greeting}</div>
+      {!hasProduct ? (
+        <Loader/>
+      ) : (
+        <ItemList products={products}/>
+      )}
+
+    </div>
+  );
+};
 
 export default ItemListContainer;

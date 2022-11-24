@@ -10,7 +10,7 @@ function Navegacion() {
     <Navbar id="navbar-container" bg="light" expand="lg">
       
       <Container >
-        <Navbar.Brand id="brandName" href="#home"><p>Anima</p></Navbar.Brand>
+        <Navbar.Brand id="brandName" href="#home"><p>Vitanima</p></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="sitios">
